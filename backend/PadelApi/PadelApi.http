@@ -1,0 +1,6 @@
+@PadelApi_HostAddress = http://localhost:5058
+
+GET {{PadelApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
