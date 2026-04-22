@@ -24,7 +24,7 @@ jobs:
           dotnet-version: '10.x'
 
       - name: Build with dotnet
-        run: dotnet build --configuration Release
+        run: dotnet build backend/PadelApi/PadelApi.csproj --configuration Release
 
       - name: Publish
         run: dotnet publish backend/PadelApi/PadelApi.csproj -c Release -o ${{env.DOTNET_ROOT}}/padelapi
